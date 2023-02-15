@@ -1,0 +1,19 @@
+
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Run the project
+    init: ./build.sh Watch
+
+vscode:
+  extensions:
+    - Ionide.Ionide-fsharp
+    - EditorConfig.EditorConfig
+    - PKief.material-icon-theme
+    - ionutvmi.path-autocomplete
+
+ports:
+  - port: 3000
+    visibility: public
+    onOpen: open-preview
